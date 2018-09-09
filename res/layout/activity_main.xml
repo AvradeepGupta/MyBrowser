@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+	<ImageButton 
+	    android:id="@+id/voice"
+	    android:background="@drawable/voice"
+	    android:layout_width="32dp"
+	    android:layout_height="32dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_alignParentRight="true"
+	  	/>
+   <ImageButton 
+	    android:id="@+id/search"
+	    android:text="Go"
+	    android:background="@drawable/changer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_toLeftOf="@id/voice"
+	    />
+    <EditText 
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL"
+        android:layout_toLeftOf="@id/search"
+        android:layout_marginTop="10dp"
+        />
+    <WebView
+        android:id="@+id/web"
+        android:layout_below="@id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_world" />
+    
+</RelativeLayout>
